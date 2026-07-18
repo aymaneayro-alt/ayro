@@ -2,27 +2,31 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goodfellas Vilvoorde | American Pizzeria & Grill</title>
-  <meta name="description" content="Pizzas new-yorkaises, burgers, tacos et grill à Vilvoorde. Découvrez la maquette du restaurant Goodfellas Vilvoorde.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Goodfellas Vilvoorde | Pizzas, burgers & street food</title>
+  <meta name="description" content="Découvrez les spécialités Goodfellas à Vilvoorde : pizzas, burgers, tacos, wraps, chicken et milkshakes. Commande en ligne et contact.">
   <meta name="theme-color" content="#0b0b0c">
-  <meta property="og:title" content="Goodfellas Vilvoorde — American Pizzeria & Grill">
+  <meta property="og:title" content="Goodfellas Vilvoorde">
   <meta property="og:description" content="Le goût de New York au cœur de Vilvorde.">
   <meta property="og:type" content="restaurant">
   <meta property="og:locale" content="fr_BE">
   <meta property="og:image" content="images/hero-feast.png">
   <link rel="preload" as="image" href="images/hero-feast.png">
   <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Goodfellas Vilvoorde","address":{"@type":"PostalAddress","streetAddress":"Jean Baptiste Nowélei 37","postalCode":"1800","addressLocality":"Vilvoorde","addressCountry":"BE"},"telephone":"+3227324504","servesCuisine":["Pizza","American","Grill"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Goodfellas Vilvoorde","address":{"@type":"PostalAddress","streetAddress":"Jean Baptiste Nowélei 37","postalCode":"1800","addressLocality":"Vilvoorde","addressCountry":"BE"},"telephone":"+3227324504","vatID":"BE1016971457","servesCuisine":["Pizza","Burgers","Street food"]}</script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
   <header class="site-header" id="top">
     <nav class="nav wrap" aria-label="Navigation principale">
-      <a class="brand" href="#home" aria-label="Goodfellas Vilvoorde — accueil"><span>GOOD</span>FELLAS<small>VILVOORDE</small></a>
+      <a class="brand" href="#home" aria-label="Goodfellas Vilvoorde, accueil"><span>GOOD</span>FELLAS<small>VILVOORDE</small></a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
       <div class="nav-links" id="nav-links">
-        <a href="#home" data-i18n="navHome">Accueil</a><a href="#menu" data-i18n="navMenu">Notre menu</a><a href="#about" data-i18n="navAbout">À propos</a><a href="#gallery" data-i18n="navGallery">Galerie</a><a href="#info" data-i18n="navInfo">Informations</a><a href="#contact" data-i18n="navContact">Contact</a>
+        <a href="#home" data-i18n="navHome">Accueil</a>
+        <a href="#specialites" data-i18n="navMenu">Nos spécialités</a>
+        <a href="#gallery" data-i18n="navGallery">Galerie</a>
+        <a href="#about" data-i18n="navAbout">À propos</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
       </div>
       <div class="nav-actions"><button class="lang" aria-label="Changer la langue"><strong>FR</strong><span>/</span> NL</button><a class="btn btn-small" href="#order" data-i18n="order">Commander</a></div>
     </nav>
@@ -30,40 +34,88 @@
 
   <main id="main">
     <section class="hero" id="home">
-      <div class="hero-overlay"></div><div class="wrap hero-content reveal">
-        <span class="eyebrow" data-i18n="heroEyebrow">AMERICAN PIZZERIA & GRILL · VILVOORDE</span>
+      <div class="hero-shade"></div>
+      <div class="wrap hero-content reveal">
         <h1 data-i18n="heroTitle">Le goût de <em>New York</em><br>au cœur de Vilvorde</h1>
-        <p data-i18n="heroText">Pizzas, burgers, tacos et spécialités américaines préparés pour les vrais gourmands.</p>
-        <div class="hero-buttons"><a class="btn" href="#menu" data-i18n="viewMenu">Voir le menu</a><a class="btn btn-outline" href="#order" data-i18n="orderNow">Commander maintenant</a></div>
-        <div class="halal"><span>✓</span><span data-i18n="halal">Viandes halal</span></div>
-      </div><div class="scroll-cue" aria-hidden="true">SCROLL <span></span></div>
+        <p data-i18n="heroText">Pizzas, burgers, tacos et recettes généreuses préparés pour les vrais gourmands.</p>
+        <div class="hero-buttons"><a class="btn" href="#specialites" data-i18n="viewMenu">Voir le menu</a><a class="btn btn-outline" href="tel:+3227324504" data-i18n="callNow">Appeler maintenant</a></div>
+        <div class="hero-trust">
+          <button class="halal-proof" type="button" aria-haspopup="dialog"><span class="seal">✓</span><span><strong data-i18n="halal">Viandes halal</strong><small data-i18n="certificate">Certificat à faire valider par le restaurant</small></span></button>
+          <div class="quick-order" aria-label="Plateformes de commande">
+            <a class="platform takeaway" data-service="takeaway" target="_blank" rel="noopener" aria-label="Commander avec Takeaway.com"><img src="images/takeaway-logo.svg" alt="Takeaway.com"><small data-i18n="pickupDelivery">À emporter · Livraison</small></a>
+            <a class="platform uber" data-service="ubereats" target="_blank" rel="noopener" aria-label="Commander avec Uber Eats"><img src="images/ubereats-logo.svg" alt="Uber Eats"><small data-i18n="delivery">Livraison</small></a>
+            <a class="platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener" aria-label="Commander avec Deliveroo"><img src="images/deliveroo-logo.svg" alt="Deliveroo"><small data-i18n="delivery">Livraison</small></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section specialties" id="menu"><div class="wrap">
-      <div class="section-head reveal"><div><span class="kicker" data-i18n="ourKitchen">NOTRE CUISINE</span><h2 data-i18n="specialtiesTitle">Nos <em>spécialités</em></h2></div><p data-i18n="specialtiesIntro">Des recettes généreuses, des ingrédients savoureux et l’esprit des diners new-yorkais.</p></div>
-      <div class="special-grid" id="special-grid"></div>
-    </div></section>
+    <section class="section specialties" id="specialites">
+      <div class="wrap">
+        <h2 class="simple-title reveal" data-i18n="specialtiesTitle">Nos <em>spécialités</em></h2>
+        <div class="category-grid">
+          <a class="category-card reveal" href="menu.html?cat=pizzas"><img src="images/pizza-gallery.png" alt="Pizza New York style"><span><strong data-i18n="catPizza">Pizzas</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
+          <a class="category-card reveal" href="menu.html?cat=burgers"><img src="images/burger-gallery.png" alt="Burger et frites"><span><strong data-i18n="catBurger">Burgers</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
+          <a class="category-card reveal" href="menu.html?cat=tacos"><img src="images/streetfood-gallery.png" alt="Tacos et wraps généreux"><span><strong data-i18n="catTacos">Tacos & wraps</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
+          <a class="category-card reveal" href="menu.html?cat=chicken"><img src="images/streetfood-gallery.png" alt="Chicken wings et tenders"><span><strong data-i18n="catChicken">Chicken</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
+          <a class="category-card reveal" href="menu.html?cat=drinks"><img src="images/streetfood-gallery.png" alt="Milkshake et boissons"><span><strong data-i18n="catDrinks">Boissons & desserts</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
+        </div>
+      </div>
+    </section>
 
-    <section class="section popular"><div class="wrap">
-      <div class="section-head reveal"><div><span class="kicker" data-i18n="bestsellers">LES INCONTOURNABLES</span><h2 data-i18n="popularTitle">Plats <em>populaires</em></h2></div><p data-i18n="popularIntro">Une sélection de nos recettes les plus gourmandes.</p></div>
-      <div class="popular-grid" id="popular-grid"></div>
-      <p class="price-note" data-i18n="priceNote">* Les prix et la disponibilité peuvent changer. Consultez la plateforme de commande pour les informations actuelles.</p>
-    </div></section>
+    <section class="photo-strip" id="gallery" aria-label="Galerie culinaire">
+      <button class="gallery-photo reveal" data-caption="Pizza New York Style"><img src="images/pizza-gallery.png" alt="Pizza au pepperoni devant un four" loading="lazy"></button>
+      <button class="gallery-photo reveal" data-caption="Goodfellas Burger"><img src="images/burger-gallery.png" alt="Double burger avec frites" loading="lazy"></button>
+      <button class="gallery-photo crop-wings reveal" data-caption="Chicken Wings"><img src="images/streetfood-gallery.png" alt="Ailes de poulet buffalo" loading="lazy"></button>
+      <button class="gallery-photo crop-tacos reveal" data-caption="Tacos"><img src="images/streetfood-gallery.png" alt="Tacos garnis" loading="lazy"></button>
+      <button class="gallery-photo crop-tenders reveal" data-caption="Chicken Tenders"><img src="images/streetfood-gallery.png" alt="Chicken tenders croustillants" loading="lazy"></button>
+      <button class="gallery-photo crop-shake reveal" data-caption="Milkshake"><img src="images/streetfood-gallery.png" alt="Milkshake à la fraise" loading="lazy"></button>
+    </section>
 
-    <section class="about" id="about"><div class="about-photo reveal"><img src="images/hero-feast.png" alt="Pizza, burger et ailes de poulet sur une table sombre"></div><div class="about-content reveal"><span class="kicker" data-i18n="ourStory">NOTRE HISTOIRE</span><h2 data-i18n="aboutTitle">Bienvenue chez<br><em>Goodfellas Vilvoorde</em></h2><p data-i18n="aboutText">Découvrez une cuisine généreuse mêlant pizzas italiennes et street food américaine dans une ambiance moderne et conviviale. Venez manger sur place, emporter votre commande ou profiter de la livraison.</p><div class="about-features"><span data-i18n="eatIn">◆ Sur place</span><span data-i18n="takeAway">◆ À emporter</span><span data-i18n="delivery">◆ Livraison</span></div></div></section>
+    <section class="order-section" id="order">
+      <div class="wrap reveal">
+        <h2 data-i18n="orderTitle">Sur place, à emporter<br><em>ou livré chez vous.</em></h2>
+        <p data-i18n="orderText">Retrouvez les prix et la disponibilité en temps réel sur votre plateforme préférée.</p>
+        <div class="order-cards">
+          <a class="big-platform takeaway" data-service="takeaway" target="_blank" rel="noopener"><img src="images/takeaway-logo.svg" alt="Takeaway.com"><small data-i18n="orderPickup">Commander à emporter ou en livraison</small></a>
+          <a class="big-platform uber" data-service="ubereats" target="_blank" rel="noopener"><img src="images/ubereats-logo.svg" alt="Uber Eats"><small data-i18n="orderDelivery">Commander en livraison</small></a>
+          <a class="big-platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener"><img src="images/deliveroo-logo.svg" alt="Deliveroo"><small data-i18n="orderDelivery">Commander en livraison</small></a>
+        </div>
+      </div>
+    </section>
 
-    <section class="section gallery" id="gallery"><div class="wrap"><div class="section-head reveal"><div><span class="kicker" data-i18n="inPictures">EN IMAGES</span><h2 data-i18n="galleryTitle">La galerie <em>Goodfellas</em></h2></div><p data-i18n="galleryIntro">Un avant-goût de ce qui vous attend.</p></div><div class="gallery-grid" id="gallery-grid"></div></div></section>
+    <section class="about" id="about">
+      <div class="about-photo reveal"><img src="images/hero-feast.png" alt="Pizza, burger et wings Goodfellas" loading="lazy"></div>
+      <div class="about-content reveal"><h2 data-i18n="aboutTitle">Bienvenue chez<br><em>Goodfellas</em></h2><p data-i18n="aboutText">Une cuisine généreuse qui mêle pizzas italiennes et street food dans une ambiance moderne et conviviale. Découvrez la carte complète et les disponibilités sur nos plateformes de commande.</p></div>
+    </section>
 
-    <section class="section info" id="info"><div class="wrap info-grid"><div class="info-content reveal"><span class="kicker" data-i18n="findUs">NOUS TROUVER</span><h2 data-i18n="infoTitle">Passez nous <em>voir</em></h2><div class="info-item"><span>⌖</span><div><small data-i18n="address">ADRESSE</small><p>Jean Baptiste Nowélei 37<br>1800 Vilvoorde, Belgique</p></div></div><div class="info-item"><span>☎</span><div><small data-i18n="phone">TÉLÉPHONE</small><p><a href="tel:+3227324504">+32 2 732 45 04</a></p></div></div><div class="info-item"><span>◷</span><div><small data-i18n="hours">HORAIRES</small><p data-i18n="hoursText">Consultez nos réseaux sociaux ou notre plateforme de commande pour les horaires actuels.</p></div></div><div class="info-buttons"><a class="btn" href="tel:+3227324504" data-i18n="call">Appeler</a><a class="btn btn-outline-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Jean+Baptiste+Nowelei+37+1800+Vilvoorde" data-i18n="directions">Itinéraire</a></div></div><a class="map-card reveal" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jean+Baptiste+Nowelei+37+1800+Vilvoorde" aria-label="Ouvrir l'adresse dans Google Maps"><div class="map-lines"></div><span class="map-pin">G</span><div class="map-label"><strong>Goodfellas Vilvoorde</strong><small data-i18n="openMaps">Ouvrir dans Google Maps ↗</small></div></a></div></section>
-
-    <section class="order-section" id="order"><div class="wrap reveal"><span class="kicker light" data-i18n="hungry">UNE PETITE FAIM ?</span><h2 data-i18n="orderTitle">Commandez vos favoris,<br><em>on s’occupe du reste.</em></h2><p data-i18n="orderText">Choisissez votre plateforme de commande préférée.</p><div class="order-buttons"><a class="order-link" data-service="takeaway" target="_blank" rel="noopener">Takeaway.com <span>↗</span></a><a class="order-link" data-service="ubereats" target="_blank" rel="noopener">Uber Eats <span>↗</span></a><a class="order-link" data-service="deliveroo" target="_blank" rel="noopener">Deliveroo <span>↗</span></a></div></div></section>
-
-    <section class="section contact" id="contact"><div class="wrap contact-grid"><div class="contact-copy reveal"><span class="kicker" data-i18n="contactKicker">CONTACT</span><h2 data-i18n="contactTitle">Une question ?<br><em>Écrivez-nous.</em></h2><p data-i18n="contactText">Nous vous répondrons dans les meilleurs délais.</p></div><form id="contact-form" class="reveal" novalidate><div class="form-row"><label><span data-i18n="name">Prénom et nom</span><input name="name" autocomplete="name" required></label><label><span data-i18n="email">Adresse e-mail</span><input name="email" type="email" autocomplete="email" required></label></div><div class="form-row"><label><span data-i18n="tel">Numéro de téléphone</span><input name="phone" type="tel" autocomplete="tel"></label><label><span data-i18n="subject">Sujet</span><input name="subject" required></label></div><label><span data-i18n="message">Message</span><textarea name="message" rows="5" required minlength="10"></textarea></label><button class="btn" type="submit" data-i18n="send">Envoyer le message</button><p class="form-status" role="status" aria-live="polite"></p></form></div></section>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2 class="reveal" data-i18n="contactTitle">Contact & <em>accès</em></h2>
+        <div class="contact-layout">
+          <div class="contact-details reveal">
+            <a class="contact-row" href="https://www.google.com/maps/dir/?api=1&destination=Jean+Baptiste+Nowelei+37+1800+Vilvoorde" target="_blank" rel="noopener"><span class="contact-icon">⌖</span><span><small data-i18n="address">ADRESSE</small><strong>Jean Baptiste Nowélei 37<br>1800 Vilvoorde, Belgique</strong></span></a>
+            <a class="contact-row" href="tel:+3227324504"><span class="contact-icon">☎</span><span><small data-i18n="phone">TÉLÉPHONE</small><strong>+32 2 732 45 04</strong></span></a>
+            <div class="contact-row"><span class="contact-icon">@</span><span><small>E-MAIL</small><strong data-i18n="emailPending">Adresse e-mail à confirmer par le restaurant</strong></span></div>
+            <div class="contact-row"><span class="contact-icon">◷</span><span><small data-i18n="hours">HORAIRES</small><strong data-i18n="hoursText">Consultez la plateforme de commande pour les horaires actuels.</strong></span></div>
+            <a class="btn" href="tel:+3227324504" data-i18n="call">Appeler le restaurant</a>
+          </div>
+          <div class="map-consent reveal" id="map-box">
+            <iframe title="Carte Google Maps de Goodfellas Vilvoorde" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Jean+Baptiste+Nowelei+37+1800+Vilvoorde&output=embed"></iframe>
+            <a class="map-open" href="https://www.google.com/maps/dir/?api=1&destination=Jean+Baptiste+Nowelei+37+1800+Vilvoorde" target="_blank" rel="noopener">Ouvrir dans Google Maps ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer><div class="wrap footer-grid"><div><a class="brand footer-brand" href="#top"><span>GOOD</span>FELLAS<small>VILVOORDE</small></a><p>Jean Baptiste Nowélei 37<br>1800 Vilvoorde · <a href="tel:+3227324504">+32 2 732 45 04</a></p></div><div><h3 data-i18n="quickLinks">Navigation</h3><a href="#menu" data-i18n="navMenu">Notre menu</a><a href="#about" data-i18n="navAbout">À propos</a><a href="#info" data-i18n="navInfo">Informations</a><a href="#contact" data-i18n="navContact">Contact</a></div><div><h3 data-i18n="follow">Suivez-nous</h3><a href="#" aria-label="Instagram">Instagram ↗</a><a href="#" aria-label="Facebook">Facebook ↗</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Goodfellas Vilvoorde</span><span data-i18n="mockup">Maquette non officielle — en attente de validation</span></div></footer>
+  <footer>
+    <div class="wrap footer-main"><div><a class="brand" href="#top"><span>GOOD</span>FELLAS<small>VILVOORDE</small></a><p>Jean Baptiste Nowélei 37 · 1800 Vilvoorde<br><a href="tel:+3227324504">+32 2 732 45 04</a></p></div><nav aria-label="Navigation de pied de page"><a href="#specialites" data-i18n="navMenu">Nos spécialités</a><a href="#about" data-i18n="navAbout">À propos</a><a href="#contact" data-i18n="navContact">Contact</a></nav></div>
+    <div class="wrap footer-line"><div><span>© <span id="year"></span> Goodfellas Vilvoorde</span><a href="privacy.html" data-i18n="privacy">Confidentialité · Belgique</a><span data-i18n="mockup">Maquette non officielle</span></div><div class="socials"><a href="https://www.instagram.com/goodfellas_vilvoorde/" target="_blank" rel="noopener" aria-label="Instagram Goodfellas Vilvoorde" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1"/></svg></a><a href="https://www.facebook.com/search/top?q=Goodfellas%20Vilvoorde" target="_blank" rel="noopener" aria-label="Rechercher Goodfellas Vilvoorde sur Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9c0-.7.3-1 1-1z"/></svg></a><a href="https://www.tiktok.com/search?q=goodfellas%20vilvoorde" target="_blank" rel="noopener" aria-label="Rechercher Goodfellas Vilvoorde sur TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3c.5 2.5 2 4 5 4v4c-2 0-3.7-.6-5-1.7V16a6 6 0 1 1-6-6v4a2 2 0 1 0 2 2V3z"/></svg></a></div></div>
+  </footer>
   <button class="back-top" aria-label="Retour en haut">↑</button>
   <dialog class="lightbox"><button aria-label="Fermer">×</button><img src="" alt=""><p></p></dialog>
+  <dialog class="certificate-dialog"><button class="dialog-close" aria-label="Fermer">×</button><span class="cert-mark">✓</span><h2 data-i18n="certTitle">Information halal</h2><p data-i18n="certText">Le certificat officiel n’a pas encore été fourni pour cette maquette. Il devra être ajouté ici uniquement après validation par le restaurant.</p></dialog>
   <script src="script.js"></script>
 </body>
 </html>
