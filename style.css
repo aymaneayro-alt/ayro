@@ -26,9 +26,19 @@
 .hero-shade{z-index:1;pointer-events:none}
 .hero-content{z-index:2}
 .hero-order-logos{width:max-content;max-width:100%}
+.hero-trust{flex-direction:column;align-items:flex-start;gap:12px}
+.halal-proof{width:max-content;max-width:100%}
+.gallery-photo{position:relative;text-align:left;color:#fff}
+.gallery-photo:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#000e);pointer-events:none}
+.gallery-label{position:absolute;z-index:2;left:20px;right:20px;bottom:17px;display:grid;gap:3px;pointer-events:none}
+.gallery-label strong{font:800 25px/1 var(--head);text-transform:uppercase}
+.gallery-label small{max-width:420px;color:#ddd;font-size:9px;line-height:1.35}
 @media(max-width:640px){
   .hero{background-position:center}
   .hero-trust{gap:12px;margin-top:22px}
   .hero-order-logos{width:100%;overflow-x:auto;padding-bottom:4px}
   .hero-order-logos .platform{min-width:115px}
+  .gallery-label{left:12px;right:12px;bottom:10px}
+  .gallery-label strong{font-size:20px}
+  .gallery-label small{display:none}
 }
