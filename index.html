@@ -29,7 +29,7 @@
         <a href="#contact" data-i18n="navContact">Contact</a>
         <a href="#about" data-i18n="navAbout">À propos</a>
       </div>
-      <div class="nav-actions"><button class="lang" aria-label="Changer la langue"><strong>FR</strong><span>/</span> NL</button><a class="btn btn-small" href="#order" data-i18n="order">Commander</a></div>
+      <div class="nav-actions"><button class="lang" aria-label="Changer la langue"><strong>FR</strong><span>/</span> NL</button><a class="btn btn-small" href="#delivery-apps" data-i18n="order">Commander</a></div>
     </nav>
   </header>
 
@@ -41,10 +41,10 @@
         <p data-i18n="heroText">Pizzas, burgers, tacos et recettes généreuses préparés pour les vrais gourmands.</p>
         <div class="hero-buttons"><a class="btn" href="#specialites" data-i18n="viewMenu">Voir le menu</a><a class="btn btn-outline" href="tel:+3227324504" data-i18n="callNow">Appeler maintenant</a></div>
         <div class="hero-trust">
-          <div class="quick-order hero-order-logos" aria-label="Plateformes de commande">
-            <a class="platform takeaway" data-service="takeaway" target="_blank" rel="noopener" aria-label="Commander avec Takeaway.com"><img src="images/takeaway-logo.svg" alt="Takeaway.com"><small data-i18n="pickupDelivery">À emporter · Livraison</small></a>
-            <a class="platform uber" data-service="ubereats" target="_blank" rel="noopener" aria-label="Commander avec Uber Eats"><img src="images/ubereats-logo.svg" alt="Uber Eats"><small data-i18n="delivery">Livraison</small></a>
-            <a class="platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener" aria-label="Commander avec Deliveroo"><img src="images/deliveroo-logo.svg" alt="Deliveroo"><small data-i18n="delivery">Livraison</small></a>
+          <div class="quick-order hero-order-logos delivery-apps" id="delivery-apps" aria-label="Plateformes de commande">
+            <a class="platform takeaway" data-service="takeaway" target="_blank" rel="noopener" aria-label="Commander avec Takeaway.com" title="Takeaway.com"><img src="images/takeaway-app.svg" alt="Takeaway.com"></a>
+            <a class="platform uber" data-service="ubereats" target="_blank" rel="noopener" aria-label="Commander avec Uber Eats" title="Uber Eats"><img src="images/ubereats-app.svg" alt="Uber Eats"></a>
+            <a class="platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener" aria-label="Commander avec Deliveroo" title="Deliveroo"><img src="images/deliveroo-app.svg" alt="Deliveroo"></a>
           </div>
           <button class="halal-proof" type="button" aria-haspopup="dialog"><span class="seal">✓</span><span><strong data-i18n="halal">Viandes halal</strong><small data-i18n="certificate">Certificat à faire valider par le restaurant</small></span></button>
         </div>
@@ -73,18 +73,6 @@
       <button class="gallery-photo reveal" data-caption="Pizza Goodfellas"><img src="images/gallery-06-pizza-goodfellas-red.png" alt="Pizza Goodfellas garnie sur fond rouge" loading="lazy"><span class="gallery-label"><strong>Pizza Goodfellas</strong></span></button>
     </section>
 
-    <section class="order-section" id="order">
-      <div class="wrap reveal">
-        <h2 data-i18n="orderTitle">Sur place, à emporter<br><em>ou livré chez vous.</em></h2>
-        <p data-i18n="orderText">Retrouvez les prix et la disponibilité en temps réel sur votre plateforme préférée.</p>
-        <div class="order-cards">
-          <a class="big-platform takeaway" data-service="takeaway" target="_blank" rel="noopener"><img src="images/takeaway-logo.svg" alt="Takeaway.com"><small data-i18n="orderPickup">Commander à emporter ou en livraison</small></a>
-          <a class="big-platform uber" data-service="ubereats" target="_blank" rel="noopener"><img src="images/ubereats-logo.svg" alt="Uber Eats"><small data-i18n="orderDelivery">Commander en livraison</small></a>
-          <a class="big-platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener"><img src="images/deliveroo-logo.svg" alt="Deliveroo"><small data-i18n="orderDelivery">Commander en livraison</small></a>
-        </div>
-      </div>
-    </section>
-
     <section class="contact" id="contact">
       <div class="wrap">
         <h2 class="reveal" data-i18n="contactTitle">Contact & <em>accès</em></h2>
@@ -105,13 +93,23 @@
     </section>
 
     <section class="about" id="about">
-      <div class="about-photo reveal"><img src="images/hero-feast.png" alt="Pizza, burger et wings Goodfellas" loading="lazy"></div>
+      <div class="about-photo reveal"><img src="images/about-goodfellas-store.png" alt="Entrée du restaurant Goodfellas" loading="lazy"></div>
       <div class="about-content reveal"><h2 data-i18n="aboutTitle">Bienvenue chez<br><em>Goodfellas</em></h2><p data-i18n="aboutText">Une cuisine généreuse qui mêle pizzas italiennes et street food dans une ambiance moderne et conviviale. Découvrez la carte complète et les disponibilités sur nos plateformes de commande.</p></div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap footer-main"><div><a class="brand" href="#top"><span>GOOD</span>FELLAS<small>VILVOORDE</small></a><p>Jean Baptiste Nowélei 37 · 1800 Vilvoorde<br><a href="tel:+3227324504">+32 2 732 45 04</a></p></div><nav aria-label="Navigation de pied de page"><a href="#specialites" data-i18n="navMenu">Nos spécialités</a><a href="#contact" data-i18n="navContact">Contact</a><a href="#about" data-i18n="navAbout">À propos</a></nav></div>
+    <div class="wrap footer-main">
+      <div><a class="brand" href="#top"><span>GOOD</span>FELLAS<small>VILVOORDE</small></a><p>Jean Baptiste Nowélei 37 · 1800 Vilvoorde<br><a href="tel:+3227324504">+32 2 732 45 04</a></p></div>
+      <div class="footer-links-and-apps">
+        <nav aria-label="Navigation de pied de page"><a href="#specialites" data-i18n="navMenu">Nos spécialités</a><a href="#contact" data-i18n="navContact">Contact</a><a href="#about" data-i18n="navAbout">À propos</a></nav>
+        <div class="footer-delivery-apps delivery-apps" aria-label="Commander en ligne">
+          <a class="platform takeaway" data-service="takeaway" target="_blank" rel="noopener" aria-label="Commander avec Takeaway.com" title="Takeaway.com"><img src="images/takeaway-app.svg" alt="Takeaway.com"></a>
+          <a class="platform uber" data-service="ubereats" target="_blank" rel="noopener" aria-label="Commander avec Uber Eats" title="Uber Eats"><img src="images/ubereats-app.svg" alt="Uber Eats"></a>
+          <a class="platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener" aria-label="Commander avec Deliveroo" title="Deliveroo"><img src="images/deliveroo-app.svg" alt="Deliveroo"></a>
+        </div>
+      </div>
+    </div>
     <div class="wrap footer-line"><div><span>© <span id="year"></span> Goodfellas Vilvoorde</span><a href="privacy.html" data-i18n="privacy">Confidentialité · Belgique</a><span data-i18n="mockup">Maquette non officielle</span></div><div class="socials"><a href="https://www.instagram.com/goodfellas_vilvoorde/" target="_blank" rel="noopener" aria-label="Instagram Goodfellas Vilvoorde" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1"/></svg></a><a href="https://www.facebook.com/search/top?q=Goodfellas%20Vilvoorde" target="_blank" rel="noopener" aria-label="Rechercher Goodfellas Vilvoorde sur Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9c0-.7.3-1 1-1z"/></svg></a><a href="https://www.tiktok.com/search?q=goodfellas%20vilvoorde" target="_blank" rel="noopener" aria-label="Rechercher Goodfellas Vilvoorde sur TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3c.5 2.5 2 4 5 4v4c-2 0-3.7-.6-5-1.7V16a6 6 0 1 1-6-6v4a2 2 0 1 0 2 2V3z"/></svg></a></div></div>
   </footer>
   <button class="back-top" aria-label="Retour en haut">↑</button>
