@@ -11,8 +11,8 @@
   <meta property="og:description" content="Le goût de New York au cœur de Vilvorde.">
   <meta property="og:type" content="restaurant">
   <meta property="og:locale" content="fr_BE">
-  <meta property="og:image" content="images/hero-feast.png">
-  <link rel="preload" as="image" href="images/hero-feast.png">
+  <meta property="og:image" content="images/hero-slide-1.png">
+  <link rel="preload" as="image" href="images/hero-slide-1.png">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Goodfellas Vilvoorde","address":{"@type":"PostalAddress","streetAddress":"Jean Baptiste Nowélei 37","postalCode":"1800","addressLocality":"Vilvoorde","addressCountry":"BE"},"telephone":"+3227324504","vatID":"BE1016971457","servesCuisine":["Pizza","Burgers","Street food"]}</script>
 </head>
@@ -26,8 +26,8 @@
         <a href="#home" data-i18n="navHome">Accueil</a>
         <a href="#specialites" data-i18n="navMenu">Nos spécialités</a>
         <a href="#gallery" data-i18n="navGallery">Galerie</a>
-        <a href="#about" data-i18n="navAbout">À propos</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
+        <a href="#about" data-i18n="navAbout">À propos</a>
       </div>
       <div class="nav-actions"><button class="lang" aria-label="Changer la langue"><strong>FR</strong><span>/</span> NL</button><a class="btn btn-small" href="#order" data-i18n="order">Commander</a></div>
     </nav>
@@ -35,19 +35,28 @@
 
   <main id="main">
     <section class="hero" id="home">
+      <div class="hero-slider" aria-label="Photos Goodfellas">
+        <div class="hero-slide is-active"><img src="images/hero-slide-1.png" alt="Sélection Goodfellas avec pizzas, burger, wraps et milkshakes"></div>
+        <div class="hero-slide"><img src="images/hero-slide-2.png" alt="Box Goodfellas avec burgers, frites et mozzarella sticks"></div>
+        <div class="hero-slide"><img src="images/hero-slide-3.png" alt="Façade du restaurant Goodfellas"></div>
+      </div>
       <div class="hero-shade"></div>
       <div class="wrap hero-content reveal">
         <h1 data-i18n="heroTitle">Le goût de <em>New York</em><br>au cœur de Vilvorde</h1>
         <p data-i18n="heroText">Pizzas, burgers, tacos et recettes généreuses préparés pour les vrais gourmands.</p>
         <div class="hero-buttons"><a class="btn" href="#specialites" data-i18n="viewMenu">Voir le menu</a><a class="btn btn-outline" href="tel:+3227324504" data-i18n="callNow">Appeler maintenant</a></div>
-        <div class="hero-trust">
-          <button class="halal-proof" type="button" aria-haspopup="dialog"><span class="seal">✓</span><span><strong data-i18n="halal">Viandes halal</strong><small data-i18n="certificate">Certificat à faire valider par le restaurant</small></span></button>
-          <div class="quick-order" aria-label="Plateformes de commande">
-            <a class="platform takeaway" data-service="takeaway" target="_blank" rel="noopener" aria-label="Commander avec Takeaway.com"><img src="images/takeaway-logo.svg" alt="Takeaway.com"><small data-i18n="pickupDelivery">À emporter · Livraison</small></a>
-            <a class="platform uber" data-service="ubereats" target="_blank" rel="noopener" aria-label="Commander avec Uber Eats"><img src="images/ubereats-logo.svg" alt="Uber Eats"><small data-i18n="delivery">Livraison</small></a>
-            <a class="platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener" aria-label="Commander avec Deliveroo"><img src="images/deliveroo-logo.svg" alt="Deliveroo"><small data-i18n="delivery">Livraison</small></a>
-          </div>
+        <div class="quick-order hero-order-logos" aria-label="Plateformes de commande">
+          <a class="platform takeaway" data-service="takeaway" target="_blank" rel="noopener" aria-label="Commander avec Takeaway.com"><img src="images/takeaway-logo.svg" alt="Takeaway.com"><small data-i18n="pickupDelivery">À emporter · Livraison</small></a>
+          <a class="platform uber" data-service="ubereats" target="_blank" rel="noopener" aria-label="Commander avec Uber Eats"><img src="images/ubereats-logo.svg" alt="Uber Eats"><small data-i18n="delivery">Livraison</small></a>
+          <a class="platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener" aria-label="Commander avec Deliveroo"><img src="images/deliveroo-logo.svg" alt="Deliveroo"><small data-i18n="delivery">Livraison</small></a>
         </div>
+      </div>
+      <button class="hero-arrow hero-prev" type="button" aria-label="Photo précédente">‹</button>
+      <button class="hero-arrow hero-next" type="button" aria-label="Photo suivante">›</button>
+      <div class="hero-dots" aria-label="Choisir une photo">
+        <button class="is-active" type="button" aria-label="Photo 1" aria-current="true"></button>
+        <button type="button" aria-label="Photo 2"></button>
+        <button type="button" aria-label="Photo 3"></button>
       </div>
     </section>
 
@@ -85,11 +94,6 @@
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="about-photo reveal"><img src="images/hero-feast.png" alt="Pizza, burger et wings Goodfellas" loading="lazy"></div>
-      <div class="about-content reveal"><h2 data-i18n="aboutTitle">Bienvenue chez<br><em>Goodfellas</em></h2><p data-i18n="aboutText">Une cuisine généreuse qui mêle pizzas italiennes et street food dans une ambiance moderne et conviviale. Découvrez la carte complète et les disponibilités sur nos plateformes de commande.</p></div>
-    </section>
-
     <section class="contact" id="contact">
       <div class="wrap">
         <h2 class="reveal" data-i18n="contactTitle">Contact & <em>accès</em></h2>
@@ -108,15 +112,19 @@
         </div>
       </div>
     </section>
+
+    <section class="about" id="about">
+      <div class="about-photo reveal"><img src="images/hero-feast.png" alt="Pizza, burger et wings Goodfellas" loading="lazy"></div>
+      <div class="about-content reveal"><h2 data-i18n="aboutTitle">Bienvenue chez<br><em>Goodfellas</em></h2><p data-i18n="aboutText">Une cuisine généreuse qui mêle pizzas italiennes et street food dans une ambiance moderne et conviviale. Découvrez la carte complète et les disponibilités sur nos plateformes de commande.</p></div>
+    </section>
   </main>
 
   <footer>
-    <div class="wrap footer-main"><div><a class="brand" href="#top"><span>GOOD</span>FELLAS<small>VILVOORDE</small></a><p>Jean Baptiste Nowélei 37 · 1800 Vilvoorde<br><a href="tel:+3227324504">+32 2 732 45 04</a></p></div><nav aria-label="Navigation de pied de page"><a href="#specialites" data-i18n="navMenu">Nos spécialités</a><a href="#about" data-i18n="navAbout">À propos</a><a href="#contact" data-i18n="navContact">Contact</a></nav></div>
+    <div class="wrap footer-main"><div><a class="brand" href="#top"><span>GOOD</span>FELLAS<small>VILVOORDE</small></a><p>Jean Baptiste Nowélei 37 · 1800 Vilvoorde<br><a href="tel:+3227324504">+32 2 732 45 04</a></p></div><nav aria-label="Navigation de pied de page"><a href="#specialites" data-i18n="navMenu">Nos spécialités</a><a href="#contact" data-i18n="navContact">Contact</a><a href="#about" data-i18n="navAbout">À propos</a></nav></div>
     <div class="wrap footer-line"><div><span>© <span id="year"></span> Goodfellas Vilvoorde</span><a href="privacy.html" data-i18n="privacy">Confidentialité · Belgique</a><span data-i18n="mockup">Maquette non officielle</span></div><div class="socials"><a href="https://www.instagram.com/goodfellas_vilvoorde/" target="_blank" rel="noopener" aria-label="Instagram Goodfellas Vilvoorde" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1"/></svg></a><a href="https://www.facebook.com/search/top?q=Goodfellas%20Vilvoorde" target="_blank" rel="noopener" aria-label="Rechercher Goodfellas Vilvoorde sur Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9c0-.7.3-1 1-1z"/></svg></a><a href="https://www.tiktok.com/search?q=goodfellas%20vilvoorde" target="_blank" rel="noopener" aria-label="Rechercher Goodfellas Vilvoorde sur TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3c.5 2.5 2 4 5 4v4c-2 0-3.7-.6-5-1.7V16a6 6 0 1 1-6-6v4a2 2 0 1 0 2 2V3z"/></svg></a></div></div>
   </footer>
   <button class="back-top" aria-label="Retour en haut">↑</button>
   <dialog class="lightbox"><button aria-label="Fermer">×</button><img src="" alt=""><p></p></dialog>
-  <dialog class="certificate-dialog"><button class="dialog-close" aria-label="Fermer">×</button><span class="cert-mark">✓</span><h2 data-i18n="certTitle">Information halal</h2><p data-i18n="certText">Le certificat officiel n’a pas encore été fourni pour cette maquette. Il devra être ajouté ici uniquement après validation par le restaurant.</p></dialog>
   <script src="script.js"></script>
 </body>
 </html>
