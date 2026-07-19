@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Deliveroo</title>
+  <rect width="96" height="96" rx="22" fill="#00ccbc"/>
+  <g fill="#fff">
+    <path d="M22 18h18l8 38 11-33h17l-7 55H34z"/>
+    <circle cx="43" cy="64" r="4" fill="#00ccbc"/>
+    <circle cx="59" cy="62" r="4" fill="#00ccbc"/>
+  </g>
+</svg>
