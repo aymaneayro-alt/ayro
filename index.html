@@ -11,8 +11,8 @@
   <meta property="og:description" content="Le goût de New York au cœur de Vilvorde.">
   <meta property="og:type" content="restaurant">
   <meta property="og:locale" content="fr_BE">
-  <meta property="og:image" content="images/hero-slide-1.png">
-  <link rel="preload" as="image" href="images/hero-slide-1.png">
+  <meta property="og:image" content="images/hero-main-clean.png">
+  <link rel="preload" as="image" href="images/hero-main-clean.png">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Goodfellas Vilvoorde","address":{"@type":"PostalAddress","streetAddress":"Jean Baptiste Nowélei 37","postalCode":"1800","addressLocality":"Vilvoorde","addressCountry":"BE"},"telephone":"+3227324504","vatID":"BE1016971457","servesCuisine":["Pizza","Burgers","Street food"]}</script>
 </head>
@@ -35,28 +35,19 @@
 
   <main id="main">
     <section class="hero" id="home">
-      <div class="hero-slider" aria-label="Photos Goodfellas">
-        <div class="hero-slide is-active"><img src="images/hero-slide-1.png" alt="Sélection Goodfellas avec pizzas, burger, wraps et milkshakes"></div>
-        <div class="hero-slide"><img src="images/hero-slide-2.png" alt="Box Goodfellas avec burgers, frites et mozzarella sticks"></div>
-        <div class="hero-slide"><img src="images/hero-slide-3.png" alt="Façade du restaurant Goodfellas"></div>
-      </div>
       <div class="hero-shade"></div>
       <div class="wrap hero-content reveal">
         <h1 data-i18n="heroTitle">Le goût de <em>New York</em><br>au cœur de Vilvorde</h1>
         <p data-i18n="heroText">Pizzas, burgers, tacos et recettes généreuses préparés pour les vrais gourmands.</p>
         <div class="hero-buttons"><a class="btn" href="#specialites" data-i18n="viewMenu">Voir le menu</a><a class="btn btn-outline" href="tel:+3227324504" data-i18n="callNow">Appeler maintenant</a></div>
-        <div class="quick-order hero-order-logos" aria-label="Plateformes de commande">
-          <a class="platform takeaway" data-service="takeaway" target="_blank" rel="noopener" aria-label="Commander avec Takeaway.com"><img src="images/takeaway-logo.svg" alt="Takeaway.com"><small data-i18n="pickupDelivery">À emporter · Livraison</small></a>
-          <a class="platform uber" data-service="ubereats" target="_blank" rel="noopener" aria-label="Commander avec Uber Eats"><img src="images/ubereats-logo.svg" alt="Uber Eats"><small data-i18n="delivery">Livraison</small></a>
-          <a class="platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener" aria-label="Commander avec Deliveroo"><img src="images/deliveroo-logo.svg" alt="Deliveroo"><small data-i18n="delivery">Livraison</small></a>
+        <div class="hero-trust">
+          <div class="quick-order hero-order-logos" aria-label="Plateformes de commande">
+            <a class="platform takeaway" data-service="takeaway" target="_blank" rel="noopener" aria-label="Commander avec Takeaway.com"><img src="images/takeaway-logo.svg" alt="Takeaway.com"><small data-i18n="pickupDelivery">À emporter · Livraison</small></a>
+            <a class="platform uber" data-service="ubereats" target="_blank" rel="noopener" aria-label="Commander avec Uber Eats"><img src="images/ubereats-logo.svg" alt="Uber Eats"><small data-i18n="delivery">Livraison</small></a>
+            <a class="platform deliveroo" data-service="deliveroo" target="_blank" rel="noopener" aria-label="Commander avec Deliveroo"><img src="images/deliveroo-logo.svg" alt="Deliveroo"><small data-i18n="delivery">Livraison</small></a>
+          </div>
+          <button class="halal-proof" type="button" aria-haspopup="dialog"><span class="seal">✓</span><span><strong data-i18n="halal">Viandes halal</strong><small data-i18n="certificate">Certificat à faire valider par le restaurant</small></span></button>
         </div>
-      </div>
-      <button class="hero-arrow hero-prev" type="button" aria-label="Photo précédente">‹</button>
-      <button class="hero-arrow hero-next" type="button" aria-label="Photo suivante">›</button>
-      <div class="hero-dots" aria-label="Choisir une photo">
-        <button class="is-active" type="button" aria-label="Photo 1" aria-current="true"></button>
-        <button type="button" aria-label="Photo 2"></button>
-        <button type="button" aria-label="Photo 3"></button>
       </div>
     </section>
 
@@ -64,8 +55,8 @@
       <div class="wrap">
         <h2 class="simple-title reveal" data-i18n="specialtiesTitle">Nos <em>spécialités</em></h2>
         <div class="category-grid">
-          <a class="category-card reveal" href="menu.html?cat=pizzas"><img src="images/pizza-gallery.png" alt="Pizza New York style"><span><strong data-i18n="catPizza">Pizzas</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
-          <a class="category-card reveal" href="menu.html?cat=burgers"><img src="images/burger-gallery.png" alt="Burger et frites"><span><strong data-i18n="catBurger">Burgers</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
+          <a class="category-card reveal" href="menu.html?cat=pizzas"><img src="images/category-pizza.png" alt="Pizza Goodfellas sur fond rouge"><span><strong data-i18n="catPizza">Pizzas</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
+          <a class="category-card reveal" href="menu.html?cat=burgers"><img src="images/category-burger.png" alt="Burger croustillant Goodfellas"><span><strong data-i18n="catBurger">Burgers</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
           <a class="category-card reveal" href="menu.html?cat=tacos"><img src="images/streetfood-gallery.png" alt="Tacos et wraps généreux"><span><strong data-i18n="catTacos">Tacos & wraps</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
           <a class="category-card reveal" href="menu.html?cat=chicken"><img src="images/streetfood-gallery.png" alt="Chicken wings et tenders"><span><strong data-i18n="catChicken">Chicken</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
           <a class="category-card reveal" href="menu.html?cat=drinks"><img src="images/streetfood-gallery.png" alt="Milkshake et boissons"><span><strong data-i18n="catDrinks">Boissons & desserts</strong><small data-i18n="discover">Découvrir la carte →</small></span></a>
@@ -125,6 +116,7 @@
   </footer>
   <button class="back-top" aria-label="Retour en haut">↑</button>
   <dialog class="lightbox"><button aria-label="Fermer">×</button><img src="" alt=""><p></p></dialog>
+  <dialog class="certificate-dialog"><button class="dialog-close" aria-label="Fermer">×</button><span class="cert-mark">✓</span><h2 data-i18n="certTitle">Information halal</h2><p data-i18n="certText">Le certificat officiel n’a pas encore été fourni pour cette maquette. Il devra être ajouté ici uniquement après validation par le restaurant.</p></dialog>
   <script src="script.js"></script>
 </body>
 </html>

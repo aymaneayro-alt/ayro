@@ -14,23 +14,5 @@ const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.tar
 const topBtn=document.querySelector('.back-top');addEventListener('scroll',()=>{document.querySelector('.site-header')?.classList.toggle('scrolled',scrollY>35);topBtn?.classList.toggle('show',scrollY>600)});topBtn?.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
 const box=document.querySelector('#map-box'),loadMap=document.querySelector('#load-map');loadMap?.addEventListener('click',()=>{box.innerHTML='<iframe title="Carte Google Maps de Goodfellas Vilvoorde" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Jean+Baptiste+Nowelei+37+1800+Vilvoorde&output=embed"></iframe>'});
 const lightbox=document.querySelector('.lightbox');document.querySelector('#gallery')?.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;lightbox.querySelector('img').src=b.querySelector('img').src;lightbox.querySelector('p').textContent=b.dataset.caption;lightbox.showModal()});lightbox?.querySelector('button')?.addEventListener('click',()=>lightbox.close());lightbox?.addEventListener('click',e=>{if(e.target===lightbox)lightbox.close()});
-const hero=document.querySelector('.hero'),heroSlider=document.querySelector('.hero-slider'),heroSlides=[...document.querySelectorAll('.hero-slide')],heroDots=[...document.querySelectorAll('.hero-dots button')];
-let heroIndex=0,heroTimer,swipeStart=null;
-const showHeroSlide=(next,restart=true)=>{
-  if(!heroSlider||!heroSlides.length)return;
-  heroIndex=(next+heroSlides.length)%heroSlides.length;
-  heroSlider.style.transform=`translate3d(-${heroIndex*100}%,0,0)`;
-  heroSlides.forEach((slide,i)=>{const active=i===heroIndex;slide.classList.toggle('is-active',active);slide.setAttribute('aria-hidden',String(!active))});
-  heroDots.forEach((dot,i)=>{const active=i===heroIndex;dot.classList.toggle('is-active',active);active?dot.setAttribute('aria-current','true'):dot.removeAttribute('aria-current')});
-  if(restart)startHeroTimer();
-};
-const startHeroTimer=()=>{clearTimeout(heroTimer);if(!matchMedia('(prefers-reduced-motion: reduce)').matches)heroTimer=setTimeout(()=>showHeroSlide(heroIndex+1),6000)};
-document.querySelector('.hero-prev')?.addEventListener('click',()=>showHeroSlide(heroIndex-1));
-document.querySelector('.hero-next')?.addEventListener('click',()=>showHeroSlide(heroIndex+1));
-heroDots.forEach((dot,i)=>dot.addEventListener('click',()=>showHeroSlide(i)));
-hero?.addEventListener('pointerdown',e=>{if(e.target.closest('a,button'))return;swipeStart=e.clientX});
-hero?.addEventListener('pointerup',e=>{if(swipeStart===null)return;const distance=e.clientX-swipeStart;swipeStart=null;if(Math.abs(distance)>50)showHeroSlide(heroIndex+(distance<0?1:-1))});
-hero?.addEventListener('pointercancel',()=>{swipeStart=null});
-document.addEventListener('visibilitychange',()=>document.hidden?clearTimeout(heroTimer):startHeroTimer());
-showHeroSlide(0);
+const cert=document.querySelector('.certificate-dialog');document.querySelector('.halal-proof')?.addEventListener('click',()=>cert?.showModal());cert?.querySelector('.dialog-close')?.addEventListener('click',()=>cert.close());cert?.addEventListener('click',e=>{if(e.target===cert)cert.close()});
 document.querySelector('#year').textContent=new Date().getFullYear();
