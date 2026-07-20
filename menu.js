@@ -1,25 +1,16 @@
 const menus={
   pizzas:{
     title:'Nos <em>pizzas</em>',image:'images/category-pizza.png',items:[
-      ['Margherita','Fromage et sauce tomate.','Dès 10,20 €'],
-      ['BBQ Chicken','Fromage, poivrons, poulet et sauce barbecue.','Dès 12,60 €'],
-      ['Vegetable','Fromage, sauce tomate, poivrons, oignons, champignons et olives.','Dès 10,30 €'],
-      ['Pepperoni Beef','Fromage, sauce tomate et pepperoni de bœuf.','Dès 10,30 €'],
-      ['Buffalo Chicken','Fromage, poulet, sauce buffalo et sauce ranch.','Dès 12,60 €'],
-      ['Buffalo Blue Cheese','Fromage, poulet, sauce buffalo et fromage bleu.','Dès 12,60 €'],
-      ['The Boss','Fromage, poulet et sauce ranch.','Dès 12,60 €'],
-      ['Mr Mayor','Fromage, poulet, poivron mariné et sauce ranch.','Dès 12,60 €'],
-      ['Mr President','Fromage, poulet, poivron mariné, jalapeño et sauce ranch.','Dès 12,60 €'],
-      ['Fresh Mozzarella','Mozzarella fraîche, huile d’olive, parmesan et sauce tomate.','10,90 €'],
-      ['Chicken Alfredo Veggie','Poulet, légumes, parmesan et sauce Alfredo.','Dès 15,00 €'],
-      ['Buffalo Jalapeño','Poulet, sauce buffalo, sauce ranch et jalapeños.','Dès 12,60 €'],
-      ['Chicken Parm','Poulet croustillant, parmesan, mozzarella et sauce tomate.','Dès 12,60 €'],
-      ['Goodfellas','Dinde, champignons, pepperoni de bœuf, poivrons, oignons et olives.','Dès 19,00 €'],
-      ['Chicken Penne Alfredo','Poulet, penne, parmesan et sauce Alfredo.','Dès 15,00 €'],
-      ['Pepperoni Jalapeño','Pepperoni de bœuf, jalapeños, fromage et sauce tomate.','Dès 10,30 €'],
-      ['Big Tony’s','Pepperoni de bœuf, boulettes de viande et jalapeños.','Dès 15,00 €'],
-      ['Pepperoni Sicilian','Fromage, sauce tomate et pepperoni de bœuf.','Dès 16,30 €'],
-      ['Truffle Ranch','Poulet, fromage et sauce ranch à la truffe.','Dès 13,70 €']
+      {name:'Margherita',description:'Fromage et sauce tomate.',sizes:[['Personal','25×25 cm','10,20 €'],['Moyenne','30×30 cm','16,10 €'],['Family XL','40×40 cm','23,00 €'],['Family XXL','50×50 cm','36,20 €']]},
+      {name:'BBQ Chicken',description:'Fromage, poivrons, poulet et sauce barbecue.',sizes:[['Personal','25×25 cm','12,60 €'],['Moyenne','30×30 cm','19,00 €'],['Family XL','40×40 cm','24,20 €'],['Family XXL','50×50 cm','39,70 €']]},
+      {name:'Vegetable',description:'Fromage, sauce tomate, poivrons, oignons, champignons et olives.',sizes:[['Personal','25×25 cm','10,30 €'],['Moyenne','30×30 cm','16,10 €'],['Family XL','40×40 cm','23,00 €'],['Family XXL','50×50 cm','36,30 €']]},
+      {name:'Pepperoni Beef',description:'Fromage, sauce tomate et pepperoni de bœuf.',sizes:[['Personal','25×25 cm','10,30 €'],['Moyenne','30×30 cm','16,10 €'],['Family XL','40×40 cm','23,00 €'],['Family XXL','50×50 cm','36,30 €']]},
+      {name:'Buffalo Chicken',description:'Fromage, poulet, sauce buffalo et sauce ranch.',sizes:[['Personal','25×25 cm','12,60 €'],['Moyenne','30×30 cm','19,00 €'],['Family XL','40×40 cm','24,20 €'],['Family XXL','50×50 cm','39,70 €']]},
+      {name:'Buffalo Blue Cheese',description:'Fromage, poulet, sauce buffalo et fromage bleu.',sizes:[['Personal','25×25 cm','12,60 €'],['Moyenne','30×30 cm','19,00 €'],['Family XL','40×40 cm','24,20 €'],['Family XXL','50×50 cm','39,70 €']]},
+      {name:'The Boss',description:'Fromage, poulet et sauce ranch.',sizes:[['Personal','25×25 cm','12,60 €'],['Moyenne','30×30 cm','19,00 €'],['Family XL','40×40 cm','24,20 €'],['Family XXL','50×50 cm','39,70 €']]},
+      {name:'Mr Mayor',description:'Fromage, poulet, poivron mariné et sauce ranch.',sizes:[['Personal','25×25 cm','12,60 €'],['Moyenne','30×30 cm','19,00 €'],['Family XL','40×40 cm','24,20 €'],['Family XXL','50×50 cm','39,70 €']]},
+      {name:'Mr President',description:'Fromage, poulet, poivron mariné, jalapeño et sauce ranch.',sizes:[['Personal','25×25 cm','12,60 €'],['Moyenne','30×30 cm','19,00 €'],['Family XL','40×40 cm','24,20 €'],['Family XXL','50×50 cm','39,70 €']]},
+      {name:'Fresh Mozzarella',description:'Mozzarella fraîche, huile d’olive, parmesan et sauce tomate.',sizes:[['Moyenne','30×30 cm','10,90 €']]}
     ]
   },
   burgers:{
@@ -64,11 +55,11 @@ const menus={
       ['Caesar Chicken Burger','Poulet frit, salade, parmesan et sauce Caesar.','9,20 €'],
       ['Buffalo Chicken Burger','Poulet frit, sauce buffalo et ranch.','9,20 €'],
       ['BBQ Chicken Burger','Poulet frit, fromage et sauce barbecue.','9,20 €'],
-      ['Chicken Wings Classic','Ailes de poulet classiques.','Dès 8,20 €'],
-      ['Sweet Chilli BBQ Wings','Ailes de poulet, sweet chilli et barbecue.','Dès 9,20 €'],
-      ['BBQ Wings','Ailes de poulet et sauce barbecue.','Dès 9,20 €'],
-      ['Buffalo Wings','Ailes de poulet et sauce buffalo.','Dès 9,20 €'],
-      ['Chicken Tenders','Filets de poulet croustillants.','Dès 6,00 €'],
+      ['Chicken Wings Classic','Ailes de poulet classiques.','8,20 €'],
+      ['Sweet Chilli BBQ Wings','Ailes de poulet, sweet chilli et barbecue.','9,20 €'],
+      ['BBQ Wings','Ailes de poulet et sauce barbecue.','9,20 €'],
+      ['Buffalo Wings','Ailes de poulet et sauce buffalo.','9,20 €'],
+      ['Chicken Tenders','Filets de poulet croustillants.','6,00 €'],
       ['Mozzarella Sticks','Six bâtonnets de mozzarella croustillants.','4,10 €'],
       ['Buffalo Mozzarella Sticks','Bâtonnets de mozzarella et sauce buffalo.','6,20 €'],
       ['Snack Box Classic','Wings classiques, accompagnements et sauces.','20,20 €'],
@@ -105,6 +96,8 @@ const key=new URLSearchParams(location.search).get('cat')||'pizzas';
 const menu=menus[key]||menus.pizzas;
 document.querySelector('#category-title').innerHTML=menu.title;
 document.querySelector('#menu-hero').style.backgroundImage=`url('${menu.image}')`;
-document.querySelector('#item-list').innerHTML=menu.items.map(([name,description,price])=>`<article class="menu-item"><div class="menu-item-head"><h2>${name}</h2><strong class="menu-price">${price}</strong></div><p>${description}</p></article>`).join('');
+document.querySelector('#item-list').innerHTML=key==='pizzas'
+  ?menu.items.map(item=>`<details class="menu-item"><summary><div class="menu-item-head"><h2>${item.name}</h2><strong class="menu-price">${item.sizes[0][2]}</strong></div><span class="size-hint">Voir les tailles et les prix</span></summary><p>${item.description}</p><div class="size-prices">${item.sizes.map(([label,size,price])=>`<div class="size-price"><span>${label}<small>${size}</small></span><strong>${price}</strong></div>`).join('')}</div></details>`).join('')
+  :menu.items.map(([name,description,price])=>`<article class="menu-item"><div class="menu-item-head"><h2>${name}</h2><strong class="menu-price">${price}</strong></div><p>${description}</p></article>`).join('');
 document.title=document.querySelector('#category-title').textContent+' | Goodfellas Vilvoorde';
 document.querySelector('#year').textContent=new Date().getFullYear();
